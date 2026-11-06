@@ -4,12 +4,13 @@
     <TargetFramework>net472</TargetFramework>
     <AssemblyName>ArmColor</AssemblyName>
     <LangVersion>latest</LangVersion>
+    <!-- BepInEx.Core is hosted on BepInEx's own feed, not nuget.org -->
+    <RestoreAdditionalProjectSources>https://nuget.bepinex.dev/v3/index.json</RestoreAdditionalProjectSources>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="BepInEx.Core" Version="5.4.21" />
-    <!-- Change this version to match your game's Unity version if the build complains -->
-    <PackageReference Include="UnityEngine.Modules" Version="2019.4.40" IncludeAssets="compile" />
+    <PackageReference Include="UnityEngine.Modules" Version="2021.3.33" IncludeAssets="compile" />
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
   </ItemGroup>
 
